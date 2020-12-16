@@ -1,0 +1,99 @@
+\hypertarget{graphSearch_8c}{}\section{graph\+Search.\+c File Reference}
+\label{graphSearch_8c}\index{graph\+Search.\+c@{graph\+Search.\+c}}
+
+
+This file takes in the adjacency matrix, gets the first neighbors, and then runs the get\+Rest function to find the other neighbors, and finally prints the full list of the neighbors.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}graph\+Search.\+h\char`\"{}}\\*
+Include dependency graph for graph\+Search.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{graphSearch_8c_a8b7d065d1078a7f9f6c3628a963497ca}{sort} (char $\ast$unchecked, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+char \hyperlink{graphSearch_8c_a89a6affa4fcf6fd4b45a05d4fad19b9c}{get\+Rest} (char $\ast$unchecked, int edge\mbox{[}50\mbox{]}\mbox{[}50\mbox{]}, int counterU)
+\item 
+void \hyperlink{graphSearch_8c_a4bf4d8b693c702358f32eef8fe639eb1}{print\+Neighbors} (char $\ast$argv\mbox{[}$\,$\mbox{]}, int edge\mbox{[}50\mbox{]}\mbox{[}50\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bfseries c} = 26\hypertarget{graphSearch_8c_aa0de7d50969b1568594a6735d702f4da}{}\label{graphSearch_8c_aa0de7d50969b1568594a6735d702f4da}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file takes in the adjacency matrix, gets the first neighbors, and then runs the get\+Rest function to find the other neighbors, and finally prints the full list of the neighbors. 
+
+\begin{DoxyAuthor}{Author}
+Philippe Lumpkin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23 Apr 2020 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{graph\+Search.\+c@{graph\+Search.\+c}!get\+Rest@{get\+Rest}}
+\index{get\+Rest@{get\+Rest}!graph\+Search.\+c@{graph\+Search.\+c}}
+\subsubsection[{\texorpdfstring{get\+Rest(char $\ast$unchecked, int edge[50][50], int counter\+U)}{getRest(char *unchecked, int edge[50][50], int counterU)}}]{\setlength{\rightskip}{0pt plus 5cm}char get\+Rest (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{unchecked, }
+\item[{int}]{edge\mbox{[}50\mbox{]}\mbox{[}50\mbox{]}, }
+\item[{int}]{counterU}
+\end{DoxyParamCaption}
+)}\hypertarget{graphSearch_8c_a89a6affa4fcf6fd4b45a05d4fad19b9c}{}\label{graphSearch_8c_a89a6affa4fcf6fd4b45a05d4fad19b9c}
+This function gets the rest of the neighbors after the first set has been gathered \begin{DoxyAuthor}{Author}
+Philippe Lumpkin 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em unchecked} & this is the list of unchecked nodes \\
+\hline
+{\em edge} & this is the adjacency matrix \\
+\hline
+{\em counterU} & this is a counter for the amount in the unchecked array  23 Apr 2020 \\
+\hline
+\end{DoxyParams}
+\index{graph\+Search.\+c@{graph\+Search.\+c}!print\+Neighbors@{print\+Neighbors}}
+\index{print\+Neighbors@{print\+Neighbors}!graph\+Search.\+c@{graph\+Search.\+c}}
+\subsubsection[{\texorpdfstring{print\+Neighbors(char $\ast$argv[], int edge[50][50])}{printNeighbors(char *argv[], int edge[50][50])}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Neighbors (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{edge\mbox{[}50\mbox{]}\mbox{[}50\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{graphSearch_8c_a4bf4d8b693c702358f32eef8fe639eb1}{}\label{graphSearch_8c_a4bf4d8b693c702358f32eef8fe639eb1}
+This function gets the beginning nodes that are connected to the start \begin{DoxyAuthor}{Author}
+Philippe Lumpkin 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & this contains the arguments passed in so we can get the start \\
+\hline
+{\em edge} & this is the adjacency matrix  23 Apr 2020 \\
+\hline
+\end{DoxyParams}
+\index{graph\+Search.\+c@{graph\+Search.\+c}!sort@{sort}}
+\index{sort@{sort}!graph\+Search.\+c@{graph\+Search.\+c}}
+\subsubsection[{\texorpdfstring{sort(char $\ast$unchecked, char $\ast$argv[])}{sort(char *unchecked, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}void sort (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{unchecked, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{graphSearch_8c_a8b7d065d1078a7f9f6c3628a963497ca}{}\label{graphSearch_8c_a8b7d065d1078a7f9f6c3628a963497ca}
+This function sorts and outputs the resulting information including the start node \begin{DoxyAuthor}{Author}
+Philippe Lumpkin 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em unchecked} & this is the list of unchecked nodes \\
+\hline
+{\em argv} & this stored the start variable  23 Apr 2020 \\
+\hline
+\end{DoxyParams}

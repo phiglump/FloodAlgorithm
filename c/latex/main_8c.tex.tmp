@@ -1,0 +1,53 @@
+\hypertarget{main_8c}{}\section{main.\+c File Reference}
+\label{main_8c}\index{main.\+c@{main.\+c}}
+
+
+This is the entry point into the program where the file information is added to the matrix.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}graph\+Search.\+h\char`\"{}}\\*
+Include dependency graph for main.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries edge} \mbox{[}50\mbox{]}\mbox{[}50\mbox{]}\hypertarget{main_8c_a1a6c1f7a5fde75102dd805e6ffb9e28e}{}\label{main_8c_a1a6c1f7a5fde75102dd805e6ffb9e28e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the entry point into the program where the file information is added to the matrix. 
+
+\begin{DoxyAuthor}{Author}
+Philippe Lumpkin date 23 Apr 2020 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$argv[])}{main(int argc, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97}
+This function will take in the name of the graph add the contents of that information to the adjacency matrix and then send that information to the print\+Negihbors function \begin{DoxyAuthor}{Author}
+Philippe Lumpkin 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & argument count \\
+\hline
+{\em argv} & argruments in an array  23 Apr 2020 \\
+\hline
+\end{DoxyParams}
